@@ -1,0 +1,5 @@
+URL Shortening: Creates short, unique URLs for easy sharing.
+Device Fingerprinting: Collects user agent information to identify device types.
+IP Tracking: Logs IP addresses of visitors for geolocation analysis.
+Visit Logging: Records each visit to a shortened URL, including timestamp.
+Analytics Dashboard: Provides detailed insights into URL usage and visitor information.
