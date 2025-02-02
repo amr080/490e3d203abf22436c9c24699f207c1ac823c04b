@@ -1,0 +1,20 @@
+-- CreateTable
+CREATE TABLE "Url" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "originalUrl" TEXT NOT NULL,
+    "shortId" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- CreateTable
+CREATE TABLE "Visit" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "urlId" INTEGER NOT NULL,
+    "userAgent" TEXT NOT NULL,
+    "ipAddress" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT "Visit_urlId_fkey" FOREIGN KEY ("urlId") REFERENCES "Url" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Url_shortId_key" ON "Url"("shortId");

@@ -1,7 +1,26 @@
 {
-  "name": "my-v0-project",
+  "name": "lfgurl",
   "version": "0.1.0",
   "private": true,
+  "description": "",
+  "keywords": [
+    "monkey"
+  ],
+  "homepage": "https://github.com/amr080/490e3d203abf22436c9c24699f207c1ac823c04b#readme",
+  "bugs": {
+    "url": "https://github.com/amr080/490e3d203abf22436c9c24699f207c1ac823c04b/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amr080/490e3d203abf22436c9c24699f207c1ac823c04b.git"
+  },
+  "license": "ISC",
+  "author": "lol",
+  "type": "commonjs",
+  "main": "index.ts",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
